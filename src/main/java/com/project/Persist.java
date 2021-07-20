@@ -7,6 +7,7 @@ import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
+
 import javax.annotation.PostConstruct;
 
 /**
@@ -27,7 +28,7 @@ public class Persist {
     }
 
     @PostConstruct
-    public void init () {
+    public void init() {
 
     }
 
@@ -42,10 +43,5 @@ public class Persist {
     public <T> T loadObject(Class<T> clazz, int oid) {
         return (T) getQuerySession().get(clazz, oid);
     }
-
-
-
-
-
 
 }

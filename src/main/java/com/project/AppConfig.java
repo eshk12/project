@@ -17,10 +17,6 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Properties;
 
-
-/**
- * Created by Sigal on 5/16/2016.
- */
 @Configuration
 @Profile("production")
 public class AppConfig {
